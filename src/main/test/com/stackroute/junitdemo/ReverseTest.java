@@ -10,7 +10,7 @@ public class ReverseTest
 {
 
 
-        Reverse ob = new Reverse();
+        Reverse object = new Reverse();
 
 
         @Before
@@ -21,7 +21,7 @@ public class ReverseTest
 
         @Test
         public void givenInputStringShouldReturnReverse() {
-            String s = ob.stringreverse("oohaa");
+            String s = object.stringreverse("oohaa");
             assertEquals("test passed", "aahoo", s);
         }
 

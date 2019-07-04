@@ -3,20 +3,20 @@ package com.stackroute.junitdemo;
 public class NumberGuess
 {
 
-    int target,num;
+    int target,number;
     String str="";
 
     public String guessNumber(int target,int num)
     {
 
         do{
-            if(num>1 && num<50)
+            if(number>1 && number<50)
             {
-                if(num == target)
+                if(number== target)
                 {
                     str="YOU ARE CORRECT";
                 }
-                else if(num<target)
+                else if(number<target)
                 {
                     str="Number guessed is less than original number";
                 }
@@ -29,7 +29,7 @@ public class NumberGuess
             {
                 str="Not in range";
             }
-        }while (num != target);
+        }while (number != target);
 
         return str;
     }

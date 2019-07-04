@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class CharactersTest
 {
-Characters ob=new Characters();
+Characters object=new Characters();
 
         @Before
         public void setUp()
@@ -20,21 +20,21 @@ Characters ob=new Characters();
         @Test
         public void givenInputShouldReturnCapitals()
     {
-        String str = ob.checkInputs('A');
+        String str = object.checkInputs('A');
         assertEquals("test passed", "Capital Letter", str);
     }
 
         @Test
         public void givenInputShouldReturnSmallLetter()
         {
-        String str = ob.checkInputs('a');
+        String str = object.checkInputs('a');
         assertEquals("test passed", "Small Letter", str);
     }
 
         @Test
 
         public void givenInputShouldReturnDigit() {
-        String str = ob.checkInputs('1');
+        String str = object.checkInputs('1');
         assertEquals("test passed", "Digit", str);
     }
 

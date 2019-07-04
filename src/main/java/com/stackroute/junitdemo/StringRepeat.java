@@ -7,14 +7,14 @@ public class StringRepeat
 
 
 
-        public String repeat(String s1, int n)
+        public String repeat(String str1, int n)
         {
-            String s2=s1.substring(s1.length()-n);
+            String str2=str1.substring(str1.length()-n);
             for(int i=0;i<n;i++)
             {
-                s1 += s2;  // String Concatenation
+                str1 += str2;  // String Concatenation
             }
-            return s1;
+            return str1;
         }
     }
 

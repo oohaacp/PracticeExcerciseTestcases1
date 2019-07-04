@@ -2,14 +2,16 @@ package com.stackroute.junitdemo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class UnspecifiedTest
-{
+public class UnspecifiedTest {
+    public class UnspecifiedInputTest {
 
-    UnspecifiedInput sumOfArray = new UnspecifiedInput();
+        UnspecifiedInput unspecifiedinput;
 
         @org.junit.Before
         public void setUp() throws Exception {
+            unspecifiedinput = new UnspecifiedInput();
         }
 
         @org.junit.After
@@ -17,11 +19,11 @@ public class UnspecifiedTest
         }
 
         @Test
-        public void addPositiveIntegers(){
+        public void addPositiveIntegers() {
 
-            int array[] = {3,6,32};
+            int array[] = {3, 6, 32};
 //		Act
-            int result = sumOfArray.addNumbers(array);
+            int result = unspecifiedinput.addNumbers(array);
             System.out.println("Test1");
 
 //		Assert
@@ -29,12 +31,12 @@ public class UnspecifiedTest
         }
 
         @Test
-        public void addNegativeValuesInArray(){
+        public void addNegativeValuesInArray() {
 
-            int array[] = {3,6,-32};
+            int array[] = {3, 6, -32};
 
 //		Act
-            int result = sumOfArray.addNumbers(array);
+            int result = unspecifiedinput.addNumbers(array);
             System.out.println("Test2");
 
 //  	Assert
@@ -42,4 +44,4 @@ public class UnspecifiedTest
         }
 
     }
-
+}

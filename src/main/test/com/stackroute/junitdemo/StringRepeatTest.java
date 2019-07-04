@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 public class StringRepeatTest
 {
-    StringRepeat ob=new StringRepeat();
+    StringRepeat object=new StringRepeat();
         @Before
         public void setUp()
         {
@@ -15,14 +15,14 @@ public class StringRepeatTest
         @Test
         public void givenInputStringShouldReturnRepeated()
         {
-            String s=ob.repeat("oohaa",2);
+            String s=object.repeat("oohaa",2);
             assertEquals("test case failed","oohaaaaaa",s);
             System.out.println("Test Case 1");
         }
         @Test
         public void givenInputStringShouldReturnNotRepeated()
         {
-            String s=ob.repeat("oohaa",0);
+            String s=object.repeat("oohaa",0);
             assertEquals("test case failed","oohaa",s);
             System.out.println("Test Case 2");
         }

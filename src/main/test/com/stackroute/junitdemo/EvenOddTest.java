@@ -16,22 +16,22 @@ public class EvenOddTest {
     }
 
     @Test
-    public void EvenOddCheckAndReturnEven() {
-        String s = ob.checkInputs(21);
-        assertEquals("test passed", "Jerry", s);
+    public void givenInputStringShouldReturnEven() {//Returns even string//
+        String str = ob.checkInputs(22);
+        assertEquals("test passed", "Jerry", str);
     }
 
     @Test
-    public void EvenOddCheckAndReturnOdd() {
-        String s = ob.checkInputs(21);
-        assertEquals("test passed", "Tom", s);
+    public void givenInputStringShouldReturnOdd() {//Returns odd string//
+        String str = ob.checkInputs(21);
+        assertEquals("test passed", "Tom", str);
     }
 
     @Test
 
-    public void EvenOddCheckAndNotInRange() {
-        String s = ob.checkInputs(1);
-        assertEquals("test passed", "Not in Range", s);
+    public void givenInputStringShouldReturnNotInRange() {//Returns not in range//
+        String str = ob.checkInputs(1);
+        assertEquals("test passed", "Not in range", str);
     }
 
 

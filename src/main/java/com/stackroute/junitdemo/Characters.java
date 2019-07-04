@@ -3,22 +3,22 @@ package com.stackroute.junitdemo;
 public class Characters
 {
 int number;
-String s=" ";
+String str=" ";
 char character;
 public String checkInputs(char a  )
 {
            String result;
             if(a>='A' && a<='Z') //Validating Capital Letters
             {
-                return s="Capital";
+                return str="Capital Letter";
             }
             else if(a>='a' && a<='z')  // Validating Small Case Letters
             {
-                return s = "Small";
+                return str = "Small Letter";
             }
             else if(a>='0' && a<='9')  // Digits validation
             {
-                return s ="Digit";
+                return str="Digit";
             }
             else
             {

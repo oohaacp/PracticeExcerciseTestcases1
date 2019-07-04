@@ -4,7 +4,7 @@ public class NumberGuess
 {
 
     int target,num;
-    String s="";
+    String str="";
 
     public String guessNumber(int target,int num)
     {
@@ -14,24 +14,24 @@ public class NumberGuess
             {
                 if(num == target)
                 {
-                    s="YOU ARE CORRECT";
+                    str="YOU ARE CORRECT";
                 }
                 else if(num<target)
                 {
-                    s="Number guessed is less than original number";
+                    str="Number guessed is less than original number";
                 }
                 else
                 {
-                    s="Number guessed is more than original number";
+                    str="Number guessed is more than original number";
                 }
             }
             else
             {
-                s="Not in range";
+                str="Not in range";
             }
         }while (num != target);
 
-        return s;
+        return str;
     }
 
 }

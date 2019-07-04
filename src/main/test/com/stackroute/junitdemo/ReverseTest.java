@@ -20,7 +20,7 @@ public class ReverseTest
         }
 
         @Test
-        public void ReverseSetTheGivenString() {
+        public void givenInputStringShouldReturnReverse() {
             String s = ob.stringreverse("oohaa");
             assertEquals("test passed", "aahoo", s);
         }

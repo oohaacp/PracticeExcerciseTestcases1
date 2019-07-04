@@ -20,11 +20,10 @@ public class NumberLoopTest
         }
 
         @Test
-        public void EvenOddCheckAndReturnEven() {
-            String s = ob.numberLoop(122333);
-            assertEquals("test passed", "122333", s);
+        public void givenInputStringShouldReturnEven() {
+            String str = ob.numberLoop(122333);
+            assertEquals("test passed", "122333", str);
         }
-
 
         @After
         public void tearDown() {

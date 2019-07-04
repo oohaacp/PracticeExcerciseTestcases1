@@ -13,14 +13,14 @@ public class StringRepeatTest
             System.out.println("Before");
         }
         @Test
-        public void checkStringAndReturnRepeated()
+        public void givenInputStringShouldReturnRepeated()
         {
             String s=ob.repeat("oohaa",2);
             assertEquals("test case failed","oohaaaaaa",s);
             System.out.println("Test Case 1");
         }
         @Test
-        public void checkStringAndReturnNotRepeatedString()
+        public void givenInputStringShouldReturnNotRepeated()
         {
             String s=ob.repeat("oohaa",0);
             assertEquals("test case failed","oohaa",s);

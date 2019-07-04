@@ -18,23 +18,24 @@ Characters ob=new Characters();
     }
 
         @Test
-        public void CharacterCheckAndReturnCapitalLetter()
+        public void givenInputShouldReturnCapitals()
     {
-        String s = ob.checkInputs('A');
-        assertEquals("test passed", "Capital", s);
+        String str = ob.checkInputs('A');
+        assertEquals("test passed", "Capital Letter", str);
     }
 
         @Test
-        public void CharacterCheckAndReturnSmallLetter() {
-        String s = ob.checkInputs('a');
-        assertEquals("test passed", "Small", s);
+        public void givenInputShouldReturnSmallLetter()
+        {
+        String str = ob.checkInputs('a');
+        assertEquals("test passed", "Small Letter", str);
     }
 
         @Test
 
-        public void characterCheckAndReturnDigit() {
-        String s = ob.checkInputs('1');
-        assertEquals("test passed", "Digit", s);
+        public void givenInputShouldReturnDigit() {
+        String str = ob.checkInputs('1');
+        assertEquals("test passed", "Digit", str);
     }
 
 
